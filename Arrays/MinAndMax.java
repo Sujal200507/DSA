@@ -2,7 +2,7 @@
 
 package com.company;
 
- class MinAndMax {
+class MinAndMax {
 
     // Method to find the minimum and maximum in the array
     public static void findMinAndMax(int[] numbers) {
