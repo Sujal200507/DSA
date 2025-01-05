@@ -1,27 +1,36 @@
+// Program to reverse an array
+
 package com.company;
 
+public class ReverseArray {
 
-public class Main {
-    public static void reverse(int numbers[]){
-
+    // Method to reverse the given array
+    public static void reverse(int[] numbers) {
         int start = 0;
-        int end = numbers.length-1;
+        int end = numbers.length - 1;
 
-        while (start<end){
+        // Reversing the array using a while loop
+        while (start < end) {
             int temp = numbers[end];
             numbers[end] = numbers[start];
             numbers[start] = temp;
             start++;
             end--;
         }
-
     }
 
-    public static void main(String[]args){
-        int numbers[] = {3,5,4,1,9};
+    // Main method
+    public static void main(String[] args) {
+        // Sample array to test the reverse method
+        int[] numbers = {3, 5, 4, 1, 9};
+
+        // Call the reverse method
         reverse(numbers);
-        for (int i=0; i< numbers.length; i++){
-            System.out.print(numbers[i]+" ");
+
+        // Print the reversed array
+        System.out.print("Reversed array: ");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
         }
     }
 }
